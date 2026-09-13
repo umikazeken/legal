@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiseWatch サポート / Support</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+      color: #1c1c1e;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+    .meta { color: #6e6e73; font-size: 0.9rem; margin-bottom: 2em; }
+    .lang-divider {
+      border: none;
+      border-top: 2px solid #e0e0e0;
+      margin: 3em 0;
+    }
+    dl { margin: 0; }
+    dt { font-weight: bold; margin-top: 1.2em; }
+    dd { margin: 0.2em 0 0 0; }
+    a { color: #007aff; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1c1c1e; color: #f2f2f7; }
+      h2 { border-color: #3a3a3c; }
+      .meta { color: #8e8e93; }
+      .lang-divider { border-color: #3a3a3c; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 日本語 -->
+<h1>WiseWatch サポート</h1>
+<p class="meta">バージョン：1.0　｜　対応デバイス：iPhone + Apple Watch</p>
+
+<h2>アプリについて</h2>
+<p>WiseWatchは、Apple Watch単体でGoogle Geminiと音声・テキストで会話できるAIアシスタントアプリです。iPhoneの設定画面でご自身のGemini APIキーを登録し、Apple Watchのマイクに話しかけるだけでAIとの会話が始まります。回答は画面表示に加え、読み上げにも対応しています。</p>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>Q. 使い始めるには何が必要ですか？</dt>
+  <dd>Google AI StudioでGemini APIキーを発行し、iPhone版WiseWatchの設定画面に貼り付けてください。保存すると自動的にApple Watchへ同期され、会話を開始できます。</dd>
+
+  <dt>Q. APIキーはどこで取得できますか？</dt>
+  <dd>Google AI Studio（Googleアカウントでログイン）でAPIキーを無料で発行できます。取得したキーは設定画面の「Gemini APIキー」欄に貼り付けてください。</dd>
+
+  <dt>Q. APIキーは安全に保存されますか？</dt>
+  <dd>はい。APIキーはiPhone内のKeychainにのみ保存されます。Apple Watchとの同期時も暗号化された通信（WatchConnectivity）で送られ、当方のサーバーを経由することはありません。</dd>
+
+  <dt>Q. 「APIキーが無効です」と表示されます。</dt>
+  <dd>APIキーの入力ミス、もしくはGoogle側でのキーの無効化・利用制限が考えられます。Google AI Studioでキーを再確認のうえ、設定画面で入力し直してください。</dd>
+
+  <dt>Q. 使用するモデルはどうやって選びますか？</dt>
+  <dd>APIキーを保存すると、そのキーで利用可能なGeminiモデルの一覧が設定画面に表示されます。一覧からお好みのモデルを選択してください。Googleがモデルを廃止した場合など一覧の取得に失敗した際は、APIキーを保存し直すと再取得されます。</dd>
+
+  <dt>Q. カスタム指示とは何ですか？</dt>
+  <dd>「応答は簡潔に」「箇条書きで回答して」など、すべての会話に共通して適用したい指示を設定画面から登録できます。空欄の場合は適用されません。</dd>
+
+  <dt>Q. Apple Watchで現在地を踏まえた回答をしてほしいです。</dt>
+  <dd>iPhoneの設定画面で「現在地情報を利用する」をONにしてください。ONの間、Apple WatchのGPSで取得した現在地がGeminiへの質問に添えられます。初回はApple Watchで位置情報の利用許可が求められます。不要な場合はいつでもOFFにできます。</dd>
+
+  <dt>Q. マイクに反応しない／音声入力が始まりません。</dt>
+  <dd>画面下部のマイクアイコンを指で直接タップしてください（他のボタンからの間接的なフォーカス移動では音声入力画面が開きません）。改善しない場合はWiseWatchを一度終了して再起動してみてください。</dd>
+
+  <dt>Q. 読み上げをオフにしたいです。</dt>
+  <dd>画面右下のスピーカーアイコンをタップすると読み上げのON/OFFを切り替えられます。この設定はApple Watch単体で管理され、iPhoneとは同期されません。</dd>
+
+  <dt>Q. iPhoneとApple Watchで設定が同期されません。</dt>
+  <dd>両方の端末でBluetooth/Wi-Fiが有効になっているか、Apple Watchが近くにありペアリングが有効になっているかご確認ください。iPhone側の設定画面を開き直すと再送信を試みます。</dd>
+
+  <dt>Q. レート制限（利用制限）のメッセージが出ました。</dt>
+  <dd>Gemini APIの無料枠の上限に達した可能性があります。しばらく時間をおいてから再度お試しください。</dd>
+
+  <dt>Q. 文字盤にWiseWatchのコンプリケーションを追加できますか？</dt>
+  <dd>はい。Apple Watchの文字盤編集画面からWiseWatchのコンプリケーションを追加すると、文字盤からすぐにアプリを起動できます。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>ご不明な点やご要望は、以下のメールアドレスまでお気軽にご連絡ください。</p>
+<p><a href="mailto:umikazeken@gmail.com">umikazeken@gmail.com</a></p>
+
+<h2>プライバシーポリシー</h2>
+<p><a href="https://umikazeken.github.io/legal/wisewatch.html">プライバシーポリシーを読む</a></p>
+
+<hr class="lang-divider">
+
+<!-- English -->
+<h1>WiseWatch Support</h1>
+<p class="meta">Version: 1.0　｜　Supported Devices: iPhone + Apple Watch</p>
+
+<h2>About the App</h2>
+<p>WiseWatch is an AI assistant app that lets you talk with Google Gemini by voice or text, directly from your Apple Watch. Register your own Gemini API key in the iPhone app's Settings, then just speak into your Apple Watch's microphone to start a conversation. Replies are shown on screen and can also be read aloud.</p>
+
+<h2>FAQ</h2>
+<dl>
+  <dt>Q. What do I need to get started?</dt>
+  <dd>Generate a Gemini API key at Google AI Studio and paste it into the Settings screen of the iPhone WiseWatch app. Once saved, it's automatically synced to your Apple Watch and you can start chatting.</dd>
+
+  <dt>Q. Where do I get an API key?</dt>
+  <dd>You can generate a Gemini API key for free at Google AI Studio (sign in with your Google account). Paste the key into the "Gemini API Key" field in Settings.</dd>
+
+  <dt>Q. Is my API key stored securely?</dt>
+  <dd>Yes. Your API key is stored only in your iPhone's Keychain. When synced to Apple Watch, it's sent over an encrypted connection (WatchConnectivity) and never passes through any server we operate.</dd>
+
+  <dt>Q. It says "Invalid API key."</dt>
+  <dd>This usually means the key was mistyped, or Google has disabled or restricted it. Double-check the key in Google AI Studio and re-enter it in Settings.</dd>
+
+  <dt>Q. How do I choose which model to use?</dt>
+  <dd>After saving your API key, a list of Gemini models available to that key appears in Settings — pick one from the list. If Google retires a model and the list fails to load, re-saving your API key will refresh it.</dd>
+
+  <dt>Q. What is "Custom Instruction"?</dt>
+  <dd>You can register an instruction (e.g., "keep answers short" or "answer in bullet points") in Settings that will be applied to every conversation. Leave it blank if you don't need one.</dd>
+
+  <dt>Q. Can WiseWatch use my current location in its answers?</dt>
+  <dd>Turn on "Use current location" in the iPhone app's Settings. While enabled, your Apple Watch's GPS location is included with your questions to Gemini. The first time, Apple Watch will ask for location permission. You can turn this off anytime.</dd>
+
+  <dt>Q. The microphone doesn't respond / voice input doesn't start.</dt>
+  <dd>Tap directly on the microphone icon at the bottom of the screen with your finger (moving focus there indirectly from another button won't open the dictation screen). If it still doesn't work, try closing and reopening WiseWatch.</dd>
+
+  <dt>Q. How do I turn off spoken replies?</dt>
+  <dd>Tap the speaker icon at the bottom right to toggle speech on/off. This setting is managed on Apple Watch only and is not synced with iPhone.</dd>
+
+  <dt>Q. My settings aren't syncing between iPhone and Apple Watch.</dt>
+  <dd>Make sure Bluetooth/Wi-Fi is enabled on both devices and that your Apple Watch is nearby and paired. Reopening the Settings screen on iPhone will retry sending your settings.</dd>
+
+  <dt>Q. I got a rate limit message.</dt>
+  <dd>You may have reached your Gemini API free-tier limit. Please wait a while and try again.</dd>
+
+  <dt>Q. Can I add a WiseWatch complication to my watch face?</dt>
+  <dd>Yes. Add the WiseWatch complication from your Apple Watch's watch face editor to launch the app quickly from your watch face.</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>For questions or feedback, feel free to reach out:</p>
+<p><a href="mailto:umikazeken@gmail.com">umikazeken@gmail.com</a></p>
+
+<h2>Privacy Policy</h2>
+<p><a href="https://umikazeken.github.io/legal/wisewatch.html">Read Privacy Policy</a></p>
+
+</body>
+</html>
