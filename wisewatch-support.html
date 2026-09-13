@@ -48,7 +48,7 @@
 
 <h2 id="onboarding">はじめに（初期設定ガイド）</h2>
 <ol>
-  <li>
+  <li id="step-get-api-key">
     <strong>Gemini APIキーを取得する</strong><br>
     APIキーとは、WiseWatchがGeminiに接続するための「合言葉」のようなものです。以下の手順で無料で発行できます。
     <ol type="a">
@@ -59,12 +59,12 @@
       <li>APIキーはパスワードと同じくらい大切な情報です。他人に見せたり、SNSなどに書き込んだりしないよう注意してください。</li>
     </ol>
   </li>
-  <li>
+  <li id="step-rate-limits">
     <strong>無料枠の利用制限について知っておく</strong><br>
     Gemini APIの無料枠には「1分あたりのリクエスト数」「1日あたりのリクエスト数」などの制限があり、モデルや時期によってGoogle側で変更されることがあります。最新の値は<a href="https://ai.google.dev/gemini-api/docs/rate-limits">Google公式のレート制限ページ</a>でご確認ください。上限に達するとWiseWatchに「利用制限に達しました」と表示されます。<br>
     ご自身でGoogle Cloudの<a href="https://ai.google.dev/gemini-api/docs/pricing">有料プラン（従量課金）を契約</a>していない限り、無料枠の上限に達しても自動的に課金されることはなく、単に一時的に利用できなくなるだけです。一方、すでに有料プランを契約済みの場合は、無料枠を使い切ると自動的に有料枠へ切り替わって利用が続けられる代わりに、その分の料金が発生する可能性がありますのでご注意ください。
   </li>
-  <li>
+  <li id="step-enter-api-key">
     <strong>iPhoneのWiseWatch設定画面にAPIキーを登録する</strong><br>
     コピーしたAPIキーをWiseWatchアプリに貼り付けます。
     <ol type="a">
@@ -75,23 +75,23 @@
       <li>少し待つと「有効なAPIキーです」という緑色の表示が出れば設定完了です。「APIキーが無効です」と赤字で表示された場合は、コピー時に余計な空白や改行が混ざっていないか確認し、貼り付け直してください。</li>
     </ol>
   </li>
-  <li>
+  <li id="step-select-model">
     <strong>使用するモデルを選ぶ</strong><br>
     APIキー保存後、「使用するGeminiモデル」に一覧が表示されます。特にこだわりがなければ、一覧の先頭にあるモデルのままで問題ありません。
   </li>
-  <li>
+  <li id="step-custom-instruction-location">
     <strong>お好みでカスタム指示・現在地情報を設定する</strong><br>
     「カスタム指示」に応答の傾向（簡潔に、箇条書きで、など）を入力できます。位置情報を踏まえた回答がほしい場合は「現在地情報を利用する」をONにしてください（初回はApple Watchで位置情報の許可が必要です）。
   </li>
-  <li>
+  <li id="step-watch-sync">
     <strong>Apple Watchへの同期を確認する</strong><br>
     設定画面の「Apple Watch連携」が「接続中」になっていれば、上記の設定は自動的にApple Watchへ送られています。「未接続」の場合はiPhoneとApple Watchを近づけ、Bluetooth/Wi-Fiが有効になっているか確認してください。
   </li>
-  <li>
+  <li id="step-talk">
     <strong>Apple Watchで話しかけてみる</strong><br>
     WiseWatchをApple Watchで開き、画面下部のマイクアイコンを指で直接タップして質問を話しかけてください。回答は画面に表示され、読み上げもされます（読み上げは右下のスピーカーアイコンでON/OFFできます）。
   </li>
-  <li>
+  <li id="step-complication">
     <strong>文字盤にコンプリケーションを追加する（任意）</strong><br>
     Apple Watchの文字盤を長押し→「編集」からコンプリケーションの追加画面に進み、WiseWatchを選択すると、文字盤からすぐに起動できるようになります。
   </li>
