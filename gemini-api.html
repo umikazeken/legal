@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini APIについて / About the Gemini API</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+      color: #1c1c1e;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+    h3 { font-size: 1rem; margin-top: 1.5em; }
+    .meta { color: #6e6e73; font-size: 0.9rem; margin-bottom: 2em; }
+    .lang-divider {
+      border: none;
+      border-top: 2px solid #e0e0e0;
+      margin: 3em 0;
+    }
+    ol { padding-left: 1.2em; }
+    ol > li { margin-bottom: 1em; }
+    a { color: #007aff; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1c1c1e; color: #f2f2f7; }
+      h2 { border-color: #3a3a3c; }
+      .meta { color: #8e8e93; }
+      .lang-divider { border-color: #3a3a3c; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 日本語 -->
+<h1>Gemini APIについて</h1>
+<p class="meta">このページはGemini APIを利用する各アプリ共通の説明ページです。</p>
+
+<h2 id="get-api-key">Gemini APIキーを取得する</h2>
+<p>APIキーとは、アプリがGoogle Geminiに接続するための「合言葉」のようなものです。以下の手順で無料で発行できます。</p>
+<ol type="1">
+  <li>iPhoneまたはパソコンのブラウザで<a href="https://aistudio.google.com/apikey">Google AI Studio（aistudio.google.com/apikey）</a>を開きます。</li>
+  <li>お持ちのGoogleアカウント（Gmailなど）でログインします。初回は利用規約への同意を求められることがあります。</li>
+  <li>画面に表示される「APIキーを作成」（英語表示の場合は「Create API key」）ボタンをタップします。すでにGoogle Cloudプロジェクトをお持ちでない場合は、専用のプロジェクトが自動的に作成されます（難しい設定は不要です）。</li>
+  <li>「AIza」から始まる長い文字列が表示されます。これがAPIキーです。キーの右にあるコピーアイコンをタップして、文字列をコピーしておきます。</li>
+  <li>APIキーはパスワードと同じくらい大切な情報です。他人に見せたり、SNSなどに書き込んだりしないよう注意してください。</li>
+</ol>
+
+<h3>アプリに登録する（例: WiseWatchの場合）</h3>
+<p>取得したAPIキーは、お使いのアプリの設定画面に貼り付けます。以下はWiseWatchでの手順の例です（他のアプリでも概ね同じ流れです）。</p>
+<ol type="a">
+  <li>WiseWatchアプリを開き、下部タブの「設定」をタップします。</li>
+  <li>一番上にある「Gemini APIキー」の入力欄をタップします。</li>
+  <li>入力欄を長押しし、表示されるメニューから「ペースト」（貼り付け）を選び、先ほどコピーしたキーを貼り付けます。</li>
+  <li>画面の別の場所をタップして、入力欄からフォーカスを外します。これで自動的に保存されます。</li>
+  <li>少し待つと「有効なAPIキーです」という緑色の表示が出れば設定完了です。「APIキーが無効です」と赤字で表示された場合は、コピー時に余計な空白や改行が混ざっていないか確認し、貼り付け直してください。</li>
+</ol>
+
+<h2 id="rate-limits">無料枠の利用制限について知っておく</h2>
+<p>Gemini APIの無料枠には「1分あたりのリクエスト数」「1日あたりのリクエスト数」などの制限があり、モデルや時期によってGoogle側で変更されることがあります。最新の値は<a href="https://ai.google.dev/gemini-api/docs/rate-limits">Google公式のレート制限ページ</a>でご確認ください。上限に達すると、アプリ側にエラーメッセージが表示されます（表示内容はアプリによって異なります）。</p>
+<p>ご自身でGoogle Cloudの<a href="https://ai.google.dev/gemini-api/docs/pricing">有料プラン（従量課金）を契約</a>していない限り、無料枠の上限に達しても自動的に課金されることはなく、単に一時的に利用できなくなるだけです。一方、すでに有料プランを契約済みの場合は、無料枠を使い切ると自動的に有料枠へ切り替わって利用が続けられる代わりに、その分の料金が発生する可能性がありますのでご注意ください。</p>
+
+<hr class="lang-divider">
+
+<!-- English -->
+<h1>About the Gemini API</h1>
+<p class="meta">This page is a shared reference used by multiple apps that rely on the Gemini API.</p>
+
+<h2 id="get-api-key-en">Get a Gemini API key</h2>
+<p>An API key is like a password that lets an app connect to Google Gemini. Here's how to generate one for free:</p>
+<ol type="1">
+  <li>Open a web browser (on your phone or a computer) and go to <a href="https://aistudio.google.com/apikey">Google AI Studio (aistudio.google.com/apikey)</a>.</li>
+  <li>Sign in with your Google account (e.g., a Gmail address). The first time, you may be asked to accept the terms of service.</li>
+  <li>Tap the "Create API key" button. If you don't already have a Google Cloud project, one is created for you automatically — no advanced setup needed.</li>
+  <li>A long string starting with "AIza" appears — this is your API key. Tap the copy icon next to it to copy it.</li>
+  <li>Treat your API key like a password: never share it with anyone or post it publicly (e.g., on social media).</li>
+</ol>
+
+<h3>Enter it into your app (example: WiseWatch)</h3>
+<p>Paste the key you copied into your app's settings screen. Below is an example using WiseWatch (most apps follow roughly the same flow):</p>
+<ol type="a">
+  <li>Open WiseWatch and tap "Settings" in the bottom tab bar.</li>
+  <li>Tap the "Gemini API Key" field at the top.</li>
+  <li>Press and hold in the field, then choose "Paste" from the menu that appears to insert the key you copied.</li>
+  <li>Tap elsewhere on the screen to move focus away from the field — this saves it automatically.</li>
+  <li>After a moment, a green "Valid API key" message confirms it worked. If you see a red "Invalid API key" message, check for extra spaces or line breaks from copying, and paste it again.</li>
+</ol>
+
+<h2 id="rate-limits-en">Know the free-tier usage limits</h2>
+<p>The Gemini API free tier has limits such as requests-per-minute and requests-per-day, which vary by model and can change over time on Google's side. Check the current values on <a href="https://ai.google.dev/gemini-api/docs/rate-limits">Google's official rate limits page</a>. When you hit a limit, the app will show an error message (the exact wording varies by app).</p>
+<p>Unless you have personally <a href="https://ai.google.dev/gemini-api/docs/pricing">signed up for a paid (pay-as-you-go) plan</a> on Google Cloud, hitting the free tier limit never results in a charge — it simply becomes temporarily unavailable. If you have already signed up for a paid plan, requests automatically switch to the paid tier once the free tier is used up so you can keep going, but note that this may incur charges.</p>
+
+</body>
+</html>
