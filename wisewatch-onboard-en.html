@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Started with WiseWatch</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+      color: #1c1c1e;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+    .lead { font-size: 1.05rem; color: #48484a; margin-top: 0.6em; }
+    ol { padding-left: 1.4em; counter-reset: step; }
+    ol > li {
+      list-style: none;
+      counter-increment: step;
+      position: relative;
+      margin-bottom: 1.2em;
+      padding-left: 0.2em;
+    }
+    ol > li::before {
+      content: counter(step);
+      position: absolute;
+      left: -1.6em;
+      top: 0.05em;
+      width: 1.3em;
+      height: 1.3em;
+      border-radius: 50%;
+      background: #007aff;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.3em;
+    }
+    ul { padding-left: 1.2em; }
+    ul > li { margin-bottom: 0.6em; }
+    a { color: #007aff; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1c1c1e; color: #f2f2f7; }
+      h2 { border-color: #3a3a3c; }
+      .lead { color: #c7c7cc; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Getting Started with WiseWatch</h1>
+<p class="lead">Talk to Google Gemini by voice, right from your Apple Watch. Just speak into the mic.</p>
+
+<h2>3 Steps to Start</h2>
+<ol>
+  <li><strong>Get a Gemini API key</strong><br>Free with any Google account. <a href="gemini-api.html#get-api-key-en">How to get & enter one</a>.</li>
+  <li><strong>Talk on your Apple Watch</strong><br>Tap the mic button and ask a question. On-screen keyboard input is also supported (select models only). <a href="https://support.apple.com/guide/watch/apdaf7837856/watchos">Learn more (Apple)</a>.</li>
+  <li><strong>Add it to your watch face (optional)</strong><br>Add the complication to launch WiseWatch with one tap. <a href="https://support.apple.com/guide/watch/apd8d0b9c582/watchos">Learn more (Apple)</a>.</li>
+</ol>
+
+<h2 id="usage">How to Use</h2>
+<ul>
+  <li><strong>Microphone button</strong>: Tap and speak — Gemini answers.</li>
+  <li><strong>Speaker button</strong>: Toggle spoken replies on or off.</li>
+</ul>
+
+<h2>Pricing</h2>
+<p>WiseWatch uses the Gemini API's free tier, so there's no monthly subscription. There are some limits, such as requests-per-minute. See <a href="gemini-api.html#rate-limits-en">details here</a>.</p>
+
+<p>For other questions, see the <a href="wisewatch-support.html">support page</a>.</p>
+
+</body>
+</html>
