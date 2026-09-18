@@ -59,6 +59,10 @@
   <li>少し待つと「有効なAPIキーです」という緑色の表示が出れば設定完了です。「APIキーが無効です」と赤字で表示された場合は、コピー時に余計な空白や改行が混ざっていないか確認し、貼り付け直してください。</li>
 </ol>
 
+<h2 id="privacy-note">生成AI利用時に知っておきたいこと</h2>
+<p>アプリに入力した内容（質問文など）は、アプリの提供元ではなくGoogle側のGemini APIサーバーに送信されて処理されます。Googleの<a href="https://ai.google.dev/gemini-api/terms">Gemini API追加利用規約</a>では、無料枠での利用時に限り、入力内容やその応答がサービス改善（品質評価等の人によるレビューを含む）に使用される場合があると定められています（有料プランでは扱いが異なります）。最新の内容は必ずGoogle公式の規約でご確認ください。</p>
+<p>この仕組み上、氏名・住所・パスワード・医療情報など、他人に知られたくない情報や機密性の高い情報は入力しないことをおすすめします。</p>
+
 <h2 id="rate-limits">無料枠の利用制限について知っておく</h2>
 <p>Gemini APIの無料枠には「1分あたりのリクエスト数」「1日あたりのリクエスト数」などの制限があり、モデルや時期によってGoogle側で変更されることがあります。最新の値は<a href="https://ai.google.dev/gemini-api/docs/rate-limits">Google公式のレート制限ページ</a>でご確認ください。上限に達すると、アプリ側にエラーメッセージが表示されます（表示内容はアプリによって異なります）。</p>
 <p>ご自身でGoogle Cloudの<a href="https://ai.google.dev/gemini-api/docs/pricing">有料プラン（従量課金）を契約</a>していない限り、無料枠の上限に達しても自動的に課金されることはなく、単に一時的に利用できなくなるだけです。一方、すでに有料プランを契約済みの場合は、無料枠を使い切ると自動的に有料枠へ切り替わって利用が続けられる代わりに、その分の料金が発生する可能性がありますのでご注意ください。</p>
@@ -88,6 +92,10 @@
   <li>Tap elsewhere on the screen to move focus away from the field — this saves it automatically.</li>
   <li>After a moment, a green "Valid API key" message confirms it worked. If you see a red "Invalid API key" message, check for extra spaces or line breaks from copying, and paste it again.</li>
 </ol>
+
+<h2 id="privacy-note-en">Things to know about using generative AI</h2>
+<p>Anything you enter into the app (such as your questions) is sent to and processed by Google's Gemini API servers, not by the app's developer. Under Google's <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a>, content submitted and generated under the free tier only may be used to improve Google's services (which can include human review for quality purposes); this does not apply to paid usage. Always check Google's official terms for the latest details.</p>
+<p>Because of this, avoid entering anything private or sensitive — such as your name, address, passwords, or medical information.</p>
 
 <h2 id="rate-limits-en">Know the free-tier usage limits</h2>
 <p>The Gemini API free tier has limits such as requests-per-minute and requests-per-day, which vary by model and can change over time on Google's side. Check the current values on <a href="https://ai.google.dev/gemini-api/docs/rate-limits">Google's official rate limits page</a>. When you hit a limit, the app will show an error message (the exact wording varies by app).</p>
