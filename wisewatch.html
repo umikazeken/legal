@@ -41,14 +41,14 @@
 <p>ユーザーが入力したGemini APIキー、選択したモデル、カスタム指示は<strong>お使いのiPhone内のKeychain/端末内にのみ保存</strong>され、当方や当方が管理するサーバーに送信されることはありません。</p>
 
 <h2>2. Apple Watch との同期</h2>
-<p>APIキー・使用するモデル・カスタム指示・現在地情報の利用設定は、Apple の WatchConnectivity フレームワークを使用してiPhoneとApple Watchの間で同期されます。このデータはお客様ご自身のデバイス間でのみやり取りされ、第三者に送信されることはありません。</p>
+<p>APIキー・使用するモデル・カスタム指示は、Apple の WatchConnectivity フレームワークを使用してiPhoneとApple Watchの間で同期されます。このデータはお客様ご自身のデバイス間でのみやり取りされ、第三者に送信されることはありません。</p>
 
 <h2>3. Gemini APIへの送信</h2>
 <p>Apple Watch上での音声・テキストによる会話内容は、ユーザーご自身が設定したAPIキーを用いて、Google の Gemini API に直接送信され、応答の生成に利用されます。会話内容は当方のサーバーを経由せず、当方が保存・閲覧することもありません。</p>
 <p>Gemini APIにおけるデータの取り扱いについては、Google のプライバシーポリシーをご確認ください。</p>
 
 <h2>4. 現在地情報</h2>
-<p>設定画面で「現在地情報を利用する」をONにした場合のみ、Apple WatchのGPSから取得した現在地（緯度・経度）が、ユーザーの発話とともにGemini APIへ送信されます。この機能はいつでも設定画面からOFFにでき、OFFの場合は位置情報の取得・送信は行われません。位置情報は当方のサーバーには送信・保存されません。</p>
+<p>WiseWatchは現在、現在地情報を取得・送信する機能を提供していません。</p>
 
 <h2>5. 音声の読み上げ・音声入力</h2>
 <p>応答の読み上げにはApple標準の音声合成（AVSpeechSynthesizer）を使用しており、端末内で処理され外部に送信されることはありません。音声入力（ディクテーション）はwatchOS標準のディクテーション機能を使用します。</p>
@@ -74,14 +74,14 @@
 <p>Your Gemini API key, selected model, and custom instructions are stored <strong>locally on your iPhone's Keychain/local storage only</strong> and are never sent to us or to any server we operate.</p>
 
 <h2>2. Apple Watch Sync</h2>
-<p>Your API key, selected model, custom instructions, and location feature setting are synced between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This data is exchanged only between your own devices and is never sent to any third party.</p>
+<p>Your API key, selected model, and custom instructions are synced between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This data is exchanged only between your own devices and is never sent to any third party.</p>
 
 <h2>3. Sending Data to the Gemini API</h2>
 <p>Conversations (voice or text) on Apple Watch are sent directly to Google's Gemini API using the API key you provide, in order to generate responses. This data does not pass through, or get stored or viewed by, any server operated by us.</p>
 <p>Please refer to Google's own privacy policy for how the Gemini API handles data.</p>
 
 <h2>4. Location Information</h2>
-<p>Only when you turn on "Use current location" in Settings, your current location (latitude/longitude), obtained via Apple Watch's GPS, is sent to the Gemini API together with your message. You can turn this off at any time in Settings; when off, no location data is collected or sent. Location data is never sent to or stored on any server we operate.</p>
+<p>WiseWatch does not currently collect or send any location information.</p>
 
 <h2>5. Speech Output and Voice Input</h2>
 <p>Spoken responses use Apple's built-in speech synthesis (AVSpeechSynthesizer), which is processed entirely on-device and never transmitted externally. Voice input uses watchOS's built-in dictation feature.</p>
